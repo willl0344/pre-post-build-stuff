@@ -1,0 +1,73 @@
+source build/envsetup.sh
+
+# ---------------------
+# hlte
+cd device/samsung/hlte
+sleep 1
+git fetch https://github.com/willl0344/android_device_samsung_hlte.git
+sleep 1
+###Remove CM overlays
+git cherry-pick a3c67db343763f8af95f91c1f6568811effd3196
+sleep 1
+###Add some slim overlays
+git cherry-pick 339b28fa8945506ba3b3f687b702ca33ac59dba6
+sleep 1
+###Slim-ify hlte
+git cherry-pick 8459b1acf8a9c3fd68f30dc71732f4376ec3a98f
+sleep 1
+###Derp master
+git cherry-pick f16737849c2d0566ba031750d21c448920aba94f
+sleep 1
+###Fix dependencies
+git cherry-pick 8cf537365d98be560f90fb746c54e72604b0d1b0
+sleep 1
+###Use CM caf-new repos
+git cherry-pick acbc55994b884379760933731b71887c89d72b32
+sleep 1
+###Test, use the caf non-new repos
+git cherry-pick 18544efe441547bebf109c3b2d688d767c97a0b4
+sleep 1
+###move dependencies straight into local manifests
+git cherry-pick b36b355f636df082ebbc17e738741c4c378ec4fe
+sleep 1
+###Derp, use CM hardware samsung
+git cherry-pick fa6e39e3f44d86d9065024d0c4edfec0152d8fbf
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# display-caf-new
+cd hardware/qcom/display-caf-new
+sleep 1
+git fetch https://github.com/willl0344/android_hardware_qcom_display-caf-new.git
+sleep 1
+###Fix build, log2f conflict
+git cherry-pick b976d84c343e4292bbcac4e4b16aae11a98354ec
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# media-caf-new
+cd hardware/qcom/media-caf-new
+sleep 1
+git fetch https://github.com/willl0344/android_hardware_qcom_media-caf-new.git
+sleep 1
+###Fix build, VideoDecoderOutputMetaData conflict
+git cherry-pick 2d7e24230e1ee125c649630138e9b894decf2c04
+sleep 1
+croot
+sleep 1
+
+#######TEMPLATE
+
+###
+git cherry-pick 
+sleep 1
+
+#######
+
+export USE_CCACHE=1
+sleep 1
+ccache -M 75
