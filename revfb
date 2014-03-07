@@ -1,0 +1,30 @@
+# ---------------------
+# Frameworks Base
+cd frameworks/base
+sleep 1
+###fix number picker blue line and highlight
+git revert da30fa0eb2b610ab64c948ecae5802fcb43d24a1
+sleep 1
+###fix search textfield
+git revert 1d2db4730518c3bba4b159a5a680e73d32f0e8bb
+sleep 1
+###fix remaining blue dialog dividers
+git revert ef6d30ee3b2d7b207f9b39b148dde3ac2f1678d1
+sleep 1
+###fb: changed all open forgoten UI from google into new UI
+git revert b80fc5ae99ce1d70c26841e2e8bb94ef35271d6a
+sleep 1
+###fb: update missing google UI changes for 4.4
+git revert dc0a23874f5080334592394edac9e4260663d34e
+sleep 1
+###fb: change alert dialog to new 4.4 UI guidelines and add
+git revert 409e05b4ae6bb452c02afc684fe372bb43d11175
+sleep 1
+###fb: correct seeker fb style for 4.4
+git revert 424a61efe50cfbe9ffa5f998817054a8369bdc1a
+sleep 1
+###fb: follow on seekbars new UI guideline for 4.4
+git revert a845169c128c19825a69a0ebdf2e4d366fdd67ad
+sleep 1
+croot
+sleep 1
