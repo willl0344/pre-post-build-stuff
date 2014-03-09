@@ -1,9 +1,0 @@
-#!/system/bin/sh
-#W03Tweaks
-
-echo "40000" > /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
-echo "20000" > /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate_min
-echo "90" > /sys/devices/system/cpu/cpufreq/ondemand/up_threshold
-write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate 40000
-write /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate_min 20000
-write /sys/devices/system/cpu/cpufreq/ondemand/up_threshold 90

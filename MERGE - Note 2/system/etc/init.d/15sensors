@@ -1,0 +1,9 @@
+#!/system/bin/sh
+
+echo 0 > /sys/class/sensors/proximity_sensor/prox_cal
+echo 1 > /sys/class/sensors/proximity_sensor/prox_cal
+
+pause 1
+
+echo 0 > /sys/class/sensors/proximity_sensor/prox_cal
+echo 1 > /sys/class/sensors/proximity_sensor/prox_cal

@@ -1,0 +1,14 @@
+#!/system/bin/sh
+#sd Card boost
+
+echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
+echo "2048" > /sys/devices/virtual/bdi/179:32/read_ahead_kb;
+echo "2048" > /sys/devices/virtual/bdi/179:64/read_ahead_kb;
+sleep 10;
+echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
+echo "2048" > /sys/devices/virtual/bdi/179:32/read_ahead_kb;
+echo "2048" > /sys/devices/virtual/bdi/179:64/read_ahead_kb;
+sleep 60;
+echo "2048" > /sys/devices/virtual/bdi/179:0/read_ahead_kb;
+echo "2048" > /sys/devices/virtual/bdi/179:32/read_ahead_kb;
+echo "2048" > /sys/devices/virtual/bdi/179:64/read_ahead_kb;
