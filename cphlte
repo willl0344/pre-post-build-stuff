@@ -50,7 +50,7 @@ croot
 sleep 1
 
 # ---------------------
-# Settings REVERTS
+# Settings
 cd packages/apps/Settings
 sleep 1
 git fetch https://github.com/willl0344/packages_apps_Settings.git kk44w03
