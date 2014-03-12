@@ -17,8 +17,8 @@ sleep 1
 git cherry-pick 48eb6295496d3e2e7425f59b036566d6dea66e7f
 sleep 1
 ###Add screen recorder
-git cherry-pick 33ebd99cbc14d148c0ddf7b979713384ff036b07
-sleep 1
+#git cherry-pick 33ebd99cbc14d148c0ddf7b979713384ff036b07
+#sleep 1
 croot
 sleep 1
 
@@ -46,6 +46,18 @@ sleep 1
 ###Remove FC'ing Carrier settings 
 git cherry-pick 2a2bd1039990e0d630d63d3eb64620169b043f05
 #leep 1
+croot
+sleep 1
+
+# ---------------------
+# Settings REVERTS
+cd packages/apps/Settings
+sleep 1
+git fetch https://github.com/willl0344/packages_apps_Settings.git kk44w03
+sleep 1
+###Hide Screen Recorder from settings menu from now
+git cherry-pick 127a0aa152edbec68fa4557e7ce229fd5131655a
+sleep 1
 croot
 sleep 1
 

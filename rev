@@ -42,9 +42,6 @@ sleep 1
 # Settings REVERTS
 cd packages/apps/Settings
 sleep 1
-###Hide Screen Recorder from settings menu from now 
-#git revert 127a0aa152edbec68fa4557e7ce229fd5131655a
-#sleep 1
 ###Settings: follow kitkat's ui
 git revert 604b38270a5ca3e817e9588bb86fa0d20ac90675
 sleep 1
@@ -110,4 +107,4 @@ sleep 1
 
 export USE_CCACHE=1
 sleep 1
-ccache -M 75
+ccache -M 100

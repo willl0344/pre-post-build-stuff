@@ -9,6 +9,12 @@ sleep 1
 ###Put display-caf-new where it should.
 git cherry-pick f4979245afdda8a34a30b71c3bbea8aede49325e
 sleep 1
+###Reduce autobrightness levels
+git cherry-pick d435ae467707729ee578ffc949896147184f5b0b
+sleep 1
+###HLTE Device Settings, thanks to Team Gummy
+git cherry-pick aa315f1f05b99f0167ced8b43d372bce20843d2b
+sleep 1
 croot
 sleep 1
 
