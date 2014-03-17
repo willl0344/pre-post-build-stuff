@@ -43,10 +43,20 @@ croot
 sleep 1
 
 # ---------------------
-# msm8960 REVERT
+# audio-caf RESET
+cd hardware/qcom/audio-caf
+sleep 1
+###reset @ hal: Port fixes and features to msm8960 variant. Fix build errors with commits after
+git reset --hard b96d871ff94333698679e5fef221d713171817f7
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# msm8960 RESET
 cd device/samsung/msm8960-common
 sleep 1
-###Reset --hard @ Camera Wrapper: Only call cancel_auto_focus when the preview is enabled. Do not use the cm overlays after
+###Reset @ Camera Wrapper: Only call cancel_auto_focus when the preview is enabled. Do not use the cm overlays after
 git reset --hard 5b7c23af0ca929f474c5b7ffc6567a30e9b3f07e
 sleep 1
 croot
