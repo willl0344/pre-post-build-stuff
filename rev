@@ -35,6 +35,9 @@ sleep 1
 ###fb: follow on seekbars new UI guideline for 4.4
 git revert a845169c128c19825a69a0ebdf2e4d366fdd67ad
 sleep 1
+###Swap volume buttons when the screen is rotated by 90 or 180 degrees
+git revert 50e085ce9bde9a77d94492d1d46d5af53cb9ddb9
+sleep 1
 croot
 sleep 1
 

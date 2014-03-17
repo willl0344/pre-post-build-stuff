@@ -42,6 +42,16 @@ sleep 1
 croot
 sleep 1
 
+# ---------------------
+# msm8960 REVERT
+cd device/samsung/msm8960-common
+sleep 1
+###Reset --hard @ Camera Wrapper: Only call cancel_auto_focus when the preview is enabled. Do not use the cm overlays after
+git reset --hard 5b7c23af0ca929f474c5b7ffc6567a30e9b3f07e
+sleep 1
+croot
+sleep 1
+
 #######TEMPLATE
 
 ###
