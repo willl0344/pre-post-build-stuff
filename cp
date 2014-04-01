@@ -19,6 +19,12 @@ sleep 1
 ###Add screen recorder
 git cherry-pick 33ebd99cbc14d148c0ddf7b979713384ff036b07
 sleep 1
+###(2/2) Remove Slim Center
+git cherry-pick 43c90ec0fedd7806ca7a212fd2e8bf0e8184973c
+sleep 1
+###Remove Slim OTA version
+git cherry-pick 763bd68d67ed921cc5a4a2cc043fef15ae903417
+sleep 1
 croot
 sleep 1
 
