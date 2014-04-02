@@ -17,8 +17,8 @@ sleep 1
 git cherry-pick 48eb6295496d3e2e7425f59b036566d6dea66e7f
 sleep 1
 ###Add screen recorder
-#git cherry-pick 33ebd99cbc14d148c0ddf7b979713384ff036b07
-#sleep 1
+git cherry-pick 33ebd99cbc14d148c0ddf7b979713384ff036b07
+sleep 1
 ###(2/2) Remove Slim Center
 git cherry-pick 43c90ec0fedd7806ca7a212fd2e8bf0e8184973c
 sleep 1
@@ -59,13 +59,10 @@ sleep 1
 # Settings
 cd packages/apps/Settings
 sleep 1
-git fetch https://github.com/willl0344/packages_apps_Settings.git kk44w03
+git fetch https://github.com/willl0344/packages_apps_Settings.git
 sleep 1
-###Hide Screen Recorder from settings menu from now
-git cherry-pick 127a0aa152edbec68fa4557e7ce229fd5131655a
-sleep 1
-###Note 3 NEW tree info
-git cherry-pick 414c06a54d89e8da1e2610b96f00ace095e280ce
+###Note 3 OLD tree info
+git cherry-pick 5d3a1b19e8ab4f8c8f57fdbc06a5085d26acc67f
 sleep 1
 croot
 sleep 1
