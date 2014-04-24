@@ -6,71 +6,68 @@ cd device/samsung/hlte
 sleep 1
 git fetch https://github.com/willl0344/device_samsung_hlte.git
 sleep 1
-###Put display-caf-new where it should.
-#git cherry-pick f4979245afdda8a34a30b71c3bbea8aede49325e
-#sleep 1
 ###Reduce autobrightness levels
 git cherry-pick d435ae467707729ee578ffc949896147184f5b0b
 sleep 1
 ###HLTE Device Settings, thanks to Team Gummy
-git cherry-pick aa315f1f05b99f0167ced8b43d372bce20843d2b
-sleep 1
+#git cherry-pick aa315f1f05b99f0167ced8b43d372bce20843d2b
+#sleep 1
 croot
 sleep 1
 
 # ---------------------
 # vendor samsung
-cd vendor/samsung
-sleep 1
+#cd vendor/samsung
+#sleep 1
 ###reset @ Merge pull request #416 from arco/cm-11.0
-git reset --hard cc83bf6a3c5a78480a15a3db129db0571bfdcc50
-sleep 1
-croot
-sleep 1
+#git reset --hard cc83bf6a3c5a78480a15a3db129db0571bfdcc50
+#sleep 1
+#croot
+#sleep 1
 
 # ---------------------
 # display-caf-new
-cd hardware/qcom/display-caf-new
-sleep 1
-git fetch https://github.com/willl0344/android_hardware_qcom_display-caf-new.git
-sleep 1
+#cd hardware/qcom/display-caf-new
+#sleep 1
+#git fetch https://github.com/willl0344/android_hardware_qcom_display-caf-new.git
+#sleep 1
 ###Fix build, log2f conflict
-git cherry-pick b976d84c343e4292bbcac4e4b16aae11a98354ec
-sleep 1
-croot
-sleep 1
+#git cherry-pick b976d84c343e4292bbcac4e4b16aae11a98354ec
+#sleep 1
+#croot
+#sleep 1
 
 # ---------------------
 # media-caf-new
-cd hardware/qcom/media-caf-new
-sleep 1
-git fetch https://github.com/willl0344/android_hardware_qcom_media-caf-new.git
-sleep 1
+#cd hardware/qcom/media-caf-new
+#sleep 1
+#git fetch https://github.com/willl0344/android_hardware_qcom_media-caf-new.git
+#sleep 1
 ###Fix build, VideoDecoderOutputMetaData conflict
-git cherry-pick 2d7e24230e1ee125c649630138e9b894decf2c04
-sleep 1
-croot
-sleep 1
+#git cherry-pick 2d7e24230e1ee125c649630138e9b894decf2c04
+#sleep 1
+#croot
+#sleep 1
 
 # ---------------------
 # audio-caf RESET
-cd hardware/qcom/audio-caf
-sleep 1
+#cd hardware/qcom/audio-caf
+#sleep 1
 ###reset @ hal: Port fixes and features to msm8960 variant. Fix build errors with commits after
-git reset --hard b96d871ff94333698679e5fef221d713171817f7
-sleep 1
-croot
-sleep 1
+#git reset --hard b96d871ff94333698679e5fef221d713171817f7
+#sleep 1
+#croot
+#sleep 1
 
 # ---------------------
 # msm8960 RESET
-cd device/samsung/msm8960-common
-sleep 1
+#cd device/samsung/msm8960-common
+#sleep 1
 ###Reset @ Camera Wrapper: Only call cancel_auto_focus when the preview is enabled. Do not use the cm overlays after
-git reset --hard 5b7c23af0ca929f474c5b7ffc6567a30e9b3f07e
-sleep 1
-croot
-sleep 1
+#git reset --hard 5b7c23af0ca929f474c5b7ffc6567a30e9b3f07e
+#sleep 1
+#croot
+#sleep 1
 
 #######TEMPLATE
 
