@@ -8,6 +8,18 @@ sleep 1
 # ------------------------------------------
 
 # ---------------------
+# hlte
+cd device/samsung/hlte
+sleep 1
+git fetch https://github.com/willl0344/device_samsung_hlte.git
+sleep 1
+###Reduce autobrightness levels
+git cherry-pick d435ae467707729ee578ffc949896147184f5b0b
+sleep 1
+croot
+sleep 1
+
+# ---------------------
 # vendor-slim
 cd vendor/slim
 sleep 1
