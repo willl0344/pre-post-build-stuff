@@ -7,9 +7,9 @@ ui_print("This is a NEW device tree build");
 ui_print(" ");
 ui_print("Compatible with 4.3 and 4.4 bootloaders");
 ui_print(" ");
-ui_print("Compatible with LK v2+, Tema kernel v3+");
+ui_print("Temasek kernel v3+ is included");
 ui_print(" ");
-ui_print("And Yank kernel");
+ui_print("Compatible with LK v2+ and Yank kernel");
 ui_print(" ");
 mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system");
 package_extract_dir("system/addon.d", "/system/addon.d");
@@ -25,6 +25,7 @@ mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system"
 mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/userdata", "/data");
 package_extract_dir("system", "/system");
 package_extract_dir("data", "/data");
+symlink("../bin/fsck.f2fs", "/system/bin/dump.f2fs");
 symlink("../xbin/su", "/system/bin/su");
 symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
 symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
@@ -34,24 +35,25 @@ symlink("busybox", "/system/xbin/[", "/system/xbin/[[",
         "/system/xbin/bbconfig", "/system/xbin/blkid", "/system/xbin/blockdev",
         "/system/xbin/brctl", "/system/xbin/bunzip2", "/system/xbin/bzcat",
         "/system/xbin/bzip2", "/system/xbin/cal", "/system/xbin/cat",
-        "/system/xbin/catv", "/system/xbin/chattr", "/system/xbin/chgrp",
-        "/system/xbin/chmod", "/system/xbin/chown", "/system/xbin/chroot",
-        "/system/xbin/clear", "/system/xbin/cmp", "/system/xbin/comm",
-        "/system/xbin/cp", "/system/xbin/cpio", "/system/xbin/crond",
-        "/system/xbin/crontab", "/system/xbin/cut", "/system/xbin/date",
-        "/system/xbin/dc", "/system/xbin/dd", "/system/xbin/depmod",
-        "/system/xbin/devmem", "/system/xbin/df", "/system/xbin/diff",
-        "/system/xbin/dirname", "/system/xbin/dmesg", "/system/xbin/dnsd",
-        "/system/xbin/dos2unix", "/system/xbin/du", "/system/xbin/echo",
-        "/system/xbin/ed", "/system/xbin/egrep", "/system/xbin/env",
-        "/system/xbin/expand", "/system/xbin/expr", "/system/xbin/false",
-        "/system/xbin/fbsplash", "/system/xbin/fdisk", "/system/xbin/fgrep",
-        "/system/xbin/find", "/system/xbin/flash_lock",
+        "/system/xbin/catv", "/system/xbin/chattr", "/system/xbin/chcon",
+        "/system/xbin/chgrp", "/system/xbin/chmod", "/system/xbin/chown",
+        "/system/xbin/chroot", "/system/xbin/clear", "/system/xbin/cmp",
+        "/system/xbin/comm", "/system/xbin/cp", "/system/xbin/cpio",
+        "/system/xbin/crond", "/system/xbin/crontab", "/system/xbin/cut",
+        "/system/xbin/date", "/system/xbin/dc", "/system/xbin/dd",
+        "/system/xbin/depmod", "/system/xbin/devmem", "/system/xbin/df",
+        "/system/xbin/diff", "/system/xbin/dirname", "/system/xbin/dmesg",
+        "/system/xbin/dnsd", "/system/xbin/dos2unix", "/system/xbin/du",
+        "/system/xbin/echo", "/system/xbin/ed", "/system/xbin/egrep",
+        "/system/xbin/env", "/system/xbin/expand", "/system/xbin/expr",
+        "/system/xbin/false", "/system/xbin/fbsplash", "/system/xbin/fdisk",
+        "/system/xbin/fgrep", "/system/xbin/find", "/system/xbin/flash_lock",
         "/system/xbin/flash_unlock", "/system/xbin/flashcp",
         "/system/xbin/flock", "/system/xbin/fold", "/system/xbin/free",
         "/system/xbin/freeramdisk", "/system/xbin/fstrim", "/system/xbin/fsync",
         "/system/xbin/ftpget", "/system/xbin/ftpput", "/system/xbin/fuser",
-        "/system/xbin/getopt", "/system/xbin/grep", "/system/xbin/groups",
+        "/system/xbin/getenforce", "/system/xbin/getopt",
+        "/system/xbin/getsebool", "/system/xbin/grep", "/system/xbin/groups",
         "/system/xbin/gunzip", "/system/xbin/gzip", "/system/xbin/halt",
         "/system/xbin/head", "/system/xbin/hexdump", "/system/xbin/id",
         "/system/xbin/ifconfig", "/system/xbin/inetd", "/system/xbin/insmod",
@@ -61,26 +63,30 @@ symlink("busybox", "/system/xbin/[", "/system/xbin/[[",
         "/system/xbin/losetup", "/system/xbin/ls", "/system/xbin/lsattr",
         "/system/xbin/lsmod", "/system/xbin/lsusb", "/system/xbin/lzcat",
         "/system/xbin/lzma", "/system/xbin/lzop", "/system/xbin/lzopcat",
-        "/system/xbin/man", "/system/xbin/md5sum", "/system/xbin/mesg",
-        "/system/xbin/mkdir", "/system/xbin/mke2fs", "/system/xbin/mkfifo",
-        "/system/xbin/mkfs.ext2", "/system/xbin/mkfs.vfat",
-        "/system/xbin/mknod", "/system/xbin/mkswap", "/system/xbin/mktemp",
-        "/system/xbin/modinfo", "/system/xbin/modprobe", "/system/xbin/more",
-        "/system/xbin/mount", "/system/xbin/mountpoint", "/system/xbin/mpstat",
-        "/system/xbin/mv", "/system/xbin/nanddump", "/system/xbin/nandwrite",
-        "/system/xbin/nbd-client", "/system/xbin/netstat", "/system/xbin/nice",
-        "/system/xbin/nohup", "/system/xbin/nslookup", "/system/xbin/ntpd",
-        "/system/xbin/od", "/system/xbin/patch", "/system/xbin/pgrep",
-        "/system/xbin/pidof", "/system/xbin/ping", "/system/xbin/pipe_progress",
-        "/system/xbin/pkill", "/system/xbin/pmap", "/system/xbin/poweroff",
-        "/system/xbin/printenv", "/system/xbin/printf", "/system/xbin/ps",
-        "/system/xbin/pstree", "/system/xbin/pwd", "/system/xbin/pwdx",
-        "/system/xbin/rdev", "/system/xbin/readlink", "/system/xbin/realpath",
-        "/system/xbin/renice", "/system/xbin/reset", "/system/xbin/resize",
+        "/system/xbin/man", "/system/xbin/matchpathcon", "/system/xbin/md5sum",
+        "/system/xbin/mesg", "/system/xbin/mkdir", "/system/xbin/mke2fs",
+        "/system/xbin/mkfifo", "/system/xbin/mkfs.ext2",
+        "/system/xbin/mkfs.vfat", "/system/xbin/mknod", "/system/xbin/mkswap",
+        "/system/xbin/mktemp", "/system/xbin/modinfo", "/system/xbin/modprobe",
+        "/system/xbin/more", "/system/xbin/mount", "/system/xbin/mountpoint",
+        "/system/xbin/mpstat", "/system/xbin/mv", "/system/xbin/nanddump",
+        "/system/xbin/nandwrite", "/system/xbin/nbd-client",
+        "/system/xbin/netstat", "/system/xbin/nice", "/system/xbin/nohup",
+        "/system/xbin/nslookup", "/system/xbin/ntpd", "/system/xbin/od",
+        "/system/xbin/patch", "/system/xbin/pgrep", "/system/xbin/pidof",
+        "/system/xbin/ping", "/system/xbin/pipe_progress", "/system/xbin/pkill",
+        "/system/xbin/pmap", "/system/xbin/poweroff", "/system/xbin/printenv",
+        "/system/xbin/printf", "/system/xbin/ps", "/system/xbin/pstree",
+        "/system/xbin/pwd", "/system/xbin/pwdx", "/system/xbin/rdev",
+        "/system/xbin/readlink", "/system/xbin/realpath", "/system/xbin/renice",
+        "/system/xbin/reset", "/system/xbin/resize", "/system/xbin/restorecon",
         "/system/xbin/rev", "/system/xbin/rm", "/system/xbin/rmdir",
         "/system/xbin/rmmod", "/system/xbin/route", "/system/xbin/run-parts",
-        "/system/xbin/rx", "/system/xbin/sed", "/system/xbin/seq",
-        "/system/xbin/setconsole", "/system/xbin/setserial",
+        "/system/xbin/runcon", "/system/xbin/rx", "/system/xbin/sed",
+        "/system/xbin/selinuxenabled", "/system/xbin/seq",
+        "/system/xbin/sestatus", "/system/xbin/setconsole",
+        "/system/xbin/setenforce", "/system/xbin/setfiles",
+        "/system/xbin/setsebool", "/system/xbin/setserial",
         "/system/xbin/setsid", "/system/xbin/sh", "/system/xbin/sha1sum",
         "/system/xbin/sha256sum", "/system/xbin/sha3sum",
         "/system/xbin/sha512sum", "/system/xbin/sleep", "/system/xbin/sort",
@@ -105,6 +111,8 @@ symlink("busybox", "/system/xbin/[", "/system/xbin/[[",
         "/system/xbin/zcat");
 symlink("libGLESv2.so", "/system/lib/libGLESv3.so");
 symlink("mksh", "/system/bin/sh");
+symlink("mount.exfat", "/system/bin/fsck.exfat",
+        "/system/bin/mkfs.exfat");
 symlink("toolbox", "/system/bin/cat", "/system/bin/chcon",
         "/system/bin/chmod", "/system/bin/chown", "/system/bin/clear",
         "/system/bin/cmp", "/system/bin/cp", "/system/bin/date",
@@ -171,6 +179,8 @@ set_metadata("/system/vendor/etc/audio_effects.conf", "uid", 0, "gid", 0, "mode"
 set_metadata("/system/vendor/firmware", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/vendor/lib", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/vendor/lib/egl", "uid", 0, "gid", 2000, "mode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+set_metadata_recursive("/system/vendor/lib/hw", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
+set_metadata("/system/vendor/lib/hw/power.msm8974.so", "uid", 0, "gid", 0, "mode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/vendor/lib/mediadrm", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata("/system/vendor/lib/mediadrm/libwvdrmengine.so", "uid", 0, "gid", 0, "mode", 0644, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
 set_metadata_recursive("/system/xbin", "uid", 0, "gid", 2000, "dmode", 0755, "fmode", 0755, "capabilities", 0x0, "selabel", "u:object_r:system_file:s0");
@@ -196,6 +206,7 @@ ifelse(is_substring("N9005", getprop("ro.bootloader")), run_program("/sbin/sh", 
 ifelse(is_substring("N900W", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp /system/lib/gsm/* /system/lib/"));
 ifelse(is_substring("N900V", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp /system/lib/cdma/* /system/lib/"));
 ifelse(is_substring("N900P", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp /system/lib/cdma/* /system/lib/"));
+ifelse(is_substring("N900R4", getprop("ro.bootloader")), run_program("/sbin/sh", "-c", "busybox cp /system/lib/cdma/* /system/lib/"));
 delete_recursive("/system/lib/gsm/");
 delete_recursive("/system/lib/cdma/");
 package_extract_file("add_to_buildprop.sh", "/tmp/add_to_buildprop.sh");

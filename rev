@@ -52,27 +52,17 @@ croot
 sleep 1
 
 # ---------------------
-# InCallUI REVERTS
-cd packages/apps/InCallUI
-sleep 1
-###In-Call UI from blue to white
-git revert 2f1095025f5e38b32cb6595eaab2fcafd799b81c
-sleep 1
-croot
-sleep 1
-
-# ---------------------
 # Dialer REVERTS
-cd packages/apps/Dialer
-sleep 1
+#cd packages/apps/Dialer
+#sleep 1
 ###Consistent white dialer
-git revert ca1121989c228b66c94841103c6fa34e4c30971a
-sleep 1
+#git revert ca1121989c228b66c94841103c6fa34e4c30971a
+#sleep 1
 ###Goodbye blue dialpad
-git revert 9cedb8316fa2a34467870e4f66216f8ad548504a
-sleep 1
-croot
-sleep 1
+#git revert 9cedb8316fa2a34467870e4f66216f8ad548504a
+#sleep 1
+#croot
+#sleep 1
 
 # ---------------------
 # Camera REVERTS
@@ -103,10 +93,26 @@ sleep 1
 croot
 sleep 1
 
-
-###
-git revert 
+# ---------------------
+# Calculator REVERTS
+cd packages/apps/Calculator
 sleep 1
+### reset fix build
+git reset --hard c26db2ca1b2f99a64473e2b3329997ff8b48e5ff
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# Browser REVERTS
+sleep 1
+cd packages/apps/Browser
+### reset @ BrowserSettings: update desktop UA string to match Chrome 33
+git reset --hard f8e085a67ca9ae00c713218b93030aa89aa1702e
+sleep 1
+croot
+sleep 1
+
 
 export USE_CCACHE=1
 sleep 1
