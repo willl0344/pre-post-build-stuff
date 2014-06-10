@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="SlimRoms/packages_apps_Calculator" />
+  <project name="CyanogenMod/android_packages_apps_Calculator" path="packages/apps/Calculator" remote="github" revision="cm-11.0" />
+  <remove-project name="SlimRoms/packages_apps_Browser" />
+  <project name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser" remote="github" revision="cm-11.0" />
+  <remove-project name="SlimRoms/frameworks_base" />
+  <project name="willl0344/frameworks_base" path="frameworks/base" remote="github" revision="w03" />
+  <remove-project name="SlimRoms/packages_apps_Settings" />
+  <project name="willl0344/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="w03" />
+  <project name="willl0344/android_packages_apps_ScreenRecorder/" path="packages/apps/ScreenRecorder" remote="github" revision="kitkat" />
+  <project name="SlimRoms/device_lge_hammerhead" path="device/lge/hammerhead" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/proprietary_vendor_lge" path="vendor/lge" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/proprietary_vendor_qcom" path="vendor/qcom" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/proprietary_vendor_broadcom" path="vendor/broadcom" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/device_asus_flo" path="device/asus/flo" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_asus_flo" path="kernel/asus/flo" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/device_lge_mako" path="device/lge/mako" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_lge_mako" path="kernel/lge/mako" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/device_samsung_t0lte" path="device/samsung/t0lte" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="kk4.4" />
+  <project name="CyanogenMod/android_device_samsung_smdk4412-qcom-common" path="device/samsung/smdk4412-qcom-common" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/OmniSwitch" name="willl0344/android_packages_apps_OmniSwitch" remote="github" revision="android-4.4" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="omnirom/android_packages_apps_Launcher3" remote="github" revision="android-4.4" />
+</manifest>

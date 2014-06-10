@@ -1,0 +1,5 @@
+make Settings
+sleep 5
+make framework-res
+sleep 5
+make SystemUI

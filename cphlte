@@ -94,18 +94,6 @@ sleep 1
 croot
 sleep 1
 
-# ---------------------
-# Build
-cd build
-sleep 1
-git fetch https://github.com/willl0344/android_build.git
-sleep 1
-###Fix build for Note 3. Revert 4.4.3 changes in ota_from_target_files
-git cherry-pick 0063dab85663ac55f269adb5bcec0a82facfeaab
-sleep 1
-croot
-sleep 1
-
 
 ######################
 

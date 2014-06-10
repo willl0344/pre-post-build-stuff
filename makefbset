@@ -1,0 +1,3 @@
+make framework-res
+sleep 5
+make Settings

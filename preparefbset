@@ -1,0 +1,58 @@
+# ---------------------
+# Settings
+cd packages/apps/Settings
+sleep 1
+git fetch https://github.com/willl0344/packages_apps_Settings.git
+sleep 1
+###Hide Screen Recorder from settings menu from now
+#git cherry-pick 127a0aa152edbec68fa4557e7ce229fd5131655a
+#sleep 1
+###New tree build info v2
+git cherry-pick 00b9eddc21093247b2cca64a644f6c15ff7cf88b
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# Settings REVERTS
+cd packages/apps/Settings
+sleep 1
+###Settings: follow kitkat's ui
+git revert 604b38270a5ca3e817e9588bb86fa0d20ac90675
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# Frameworks Base
+cd frameworks/base
+sleep 1
+###fix number picker blue line and highlight
+git revert da30fa0eb2b610ab64c948ecae5802fcb43d24a1
+sleep 1
+###fix search textfield
+git revert 1d2db4730518c3bba4b159a5a680e73d32f0e8bb
+sleep 1
+###fix remaining blue dialog dividers
+git revert ef6d30ee3b2d7b207f9b39b148dde3ac2f1678d1
+sleep 1
+###fb: changed all open forgoten UI from google into new UI
+git revert b80fc5ae99ce1d70c26841e2e8bb94ef35271d6a
+sleep 1
+###fb: update missing google UI changes for 4.4
+git revert dc0a23874f5080334592394edac9e4260663d34e
+sleep 1
+###fb: change alert dialog to new 4.4 UI guidelines and add
+git revert 409e05b4ae6bb452c02afc684fe372bb43d11175
+sleep 1
+###fb: correct seeker fb style for 4.4
+git revert 424a61efe50cfbe9ffa5f998817054a8369bdc1a
+sleep 1
+###fb: follow on seekbars new UI guideline for 4.4
+git revert a845169c128c19825a69a0ebdf2e4d366fdd67ad
+sleep 1
+###Swap volume buttons when the screen is rotated by 90 or 180 degrees
+git revert 50e085ce9bde9a77d94492d1d46d5af53cb9ddb9
+sleep 1
+croot
+sleep 1
