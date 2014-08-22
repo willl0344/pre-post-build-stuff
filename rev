@@ -11,32 +11,32 @@ sleep 1
 # Frameworks Base
 cd frameworks/base
 sleep 1
-###fix number picker blue line and highlight
-git revert da30fa0eb2b610ab64c948ecae5802fcb43d24a1
+###AudioManager: make swap volume buttons RTL aware
+git revert 1539c4be939fb257abffd57c944b91a3177015dc --no-edit
 sleep 1
 ###fix search textfield
-git revert 1d2db4730518c3bba4b159a5a680e73d32f0e8bb
+git revert 1d2db4730518c3bba4b159a5a680e73d32f0e8bb --no-edit
 sleep 1
 ###fix remaining blue dialog dividers
-git revert ef6d30ee3b2d7b207f9b39b148dde3ac2f1678d1
+git revert ef6d30ee3b2d7b207f9b39b148dde3ac2f1678d1 --no-edit
 sleep 1
 ###fb: changed all open forgoten UI from google into new UI
-git revert b80fc5ae99ce1d70c26841e2e8bb94ef35271d6a
+git revert b80fc5ae99ce1d70c26841e2e8bb94ef35271d6a --no-edit
 sleep 1
 ###fb: update missing google UI changes for 4.4
-git revert dc0a23874f5080334592394edac9e4260663d34e
+git revert dc0a23874f5080334592394edac9e4260663d34e --no-edit
 sleep 1
 ###fb: change alert dialog to new 4.4 UI guidelines and add
-git revert 409e05b4ae6bb452c02afc684fe372bb43d11175
+git revert 409e05b4ae6bb452c02afc684fe372bb43d11175 --no-edit
 sleep 1
 ###fb: correct seeker fb style for 4.4
-git revert 424a61efe50cfbe9ffa5f998817054a8369bdc1a
+git revert 424a61efe50cfbe9ffa5f998817054a8369bdc1a --no-edit
 sleep 1
 ###fb: follow on seekbars new UI guideline for 4.4
-git revert a845169c128c19825a69a0ebdf2e4d366fdd67ad
+git revert a845169c128c19825a69a0ebdf2e4d366fdd67ad --no-edit
 sleep 1
 ###Swap volume buttons when the screen is rotated by 90 or 180 degrees
-git revert 50e085ce9bde9a77d94492d1d46d5af53cb9ddb9
+git revert 50e085ce9bde9a77d94492d1d46d5af53cb9ddb9 --no-edit
 sleep 1
 croot
 sleep 1
@@ -46,7 +46,7 @@ sleep 1
 cd packages/apps/Settings
 sleep 1
 ###Settings: follow kitkat's ui
-git revert 604b38270a5ca3e817e9588bb86fa0d20ac90675
+git revert 604b38270a5ca3e817e9588bb86fa0d20ac90675 --no-edit
 sleep 1
 croot
 sleep 1
@@ -56,10 +56,10 @@ sleep 1
 #cd packages/apps/Dialer
 #sleep 1
 ###Consistent white dialer
-#git revert ca1121989c228b66c94841103c6fa34e4c30971a
+#git revert ca1121989c228b66c94841103c6fa34e4c30971a --no-edit
 #sleep 1
 ###Goodbye blue dialpad
-#git revert 9cedb8316fa2a34467870e4f66216f8ad548504a
+#git revert 9cedb8316fa2a34467870e4f66216f8ad548504a --no-edit
 #sleep 1
 #croot
 #sleep 1
@@ -69,16 +69,16 @@ sleep 1
 cd packages/apps/Camera2
 sleep 1
 ###Camera2: some aapt warnings cleanup
-git revert c77fe93833f2e6efea4df38534462c24862053db
+git revert c77fe93833f2e6efea4df38534462c24862053db --no-edit
 sleep 1
 ###White panorama ui
-git revert 473878dd1123feee2ce964601a0bd7cdaff66413
+git revert 473878dd1123feee2ce964601a0bd7cdaff66413 --no-edit
 sleep 1
 ###camera2: update to new 4.4 KitKat UI
-git revert ed5b3cff0a62e30dd80b0e0d60589fe570535ac1
+git revert ed5b3cff0a62e30dd80b0e0d60589fe570535ac1 --no-edit
 sleep 1
 ###camera2: follow new 4.4 UI guidelines
-git revert b2462046ac6f39d4e0b1bc4ec4bc5ace819bb2b0
+git revert b2462046ac6f39d4e0b1bc4ec4bc5ace819bb2b0 --no-edit
 sleep 1
 croot
 sleep 1
@@ -88,7 +88,7 @@ sleep 1
 cd packages/services/Telephony
 sleep 1
 ###White emergency dialer
-git revert 8d4fef0aae53dcff20aff23d0e93b6d6dd3e8a4f
+git revert 8d4fef0aae53dcff20aff23d0e93b6d6dd3e8a4f --no-edit
 sleep 1
 croot
 sleep 1

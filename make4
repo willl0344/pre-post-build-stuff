@@ -2,6 +2,6 @@ make Settings
 sleep 5
 make framework-res
 sleep 5
-make Keyguard
-sleep 5
 make SystemUI
+sleep 5
+make Keyguard

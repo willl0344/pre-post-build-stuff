@@ -1,24 +1,11 @@
 # ---------------------
-# Settings
-cd packages/apps/Settings
+# Frameworks base
+cd frameworks/base
 sleep 1
-git fetch https://github.com/willl0344/packages_apps_Settings.git
+git fetch https://github.com/willl0344/frameworks_base.git
 sleep 1
-###Hide Screen Recorder from settings menu from now
-#git cherry-pick 127a0aa152edbec68fa4557e7ce229fd5131655a
-#sleep 1
-###New tree build info v2
-git cherry-pick 00b9eddc21093247b2cca64a644f6c15ff7cf88b
-sleep 1
-croot
-sleep 1
-
-# ---------------------
-# Settings REVERTS
-cd packages/apps/Settings
-sleep 1
-###Settings: follow kitkat's ui
-git revert 604b38270a5ca3e817e9588bb86fa0d20ac90675
+###Revert "fix number picker blue line and highlight" 
+git cherry-pick 7c097af807e493b43f5c545c08fd722af959d114
 sleep 1
 croot
 sleep 1
@@ -28,8 +15,8 @@ sleep 1
 cd frameworks/base
 sleep 1
 ###fix number picker blue line and highlight
-git revert da30fa0eb2b610ab64c948ecae5802fcb43d24a1
-sleep 1
+#git revert da30fa0eb2b610ab64c948ecae5802fcb43d24a1
+#sleep 1
 ###fix search textfield
 git revert 1d2db4730518c3bba4b159a5a680e73d32f0e8bb
 sleep 1
@@ -53,6 +40,16 @@ git revert a845169c128c19825a69a0ebdf2e4d366fdd67ad
 sleep 1
 ###Swap volume buttons when the screen is rotated by 90 or 180 degrees
 git revert 50e085ce9bde9a77d94492d1d46d5af53cb9ddb9
+sleep 1
+croot
+sleep 1
+
+# ---------------------
+# Settings REVERTS
+cd packages/apps/Settings
+sleep 1
+###Settings: follow kitkat's ui
+git revert 604b38270a5ca3e817e9588bb86fa0d20ac90675
 sleep 1
 croot
 sleep 1

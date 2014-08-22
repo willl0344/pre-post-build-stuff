@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project name="willl0344/proprietary_vendor_samsung/" path="vendor/samsung" remote="github" revision="goodold" />
+  <project name="willl0344/android_kernel_samsung_hlte" path="kernel/samsung/hlte" remote="github" revision="goodold" />
+  <project name="willl0344/android_device_samsung_hlte-common" path="device/samsung/hlte-common" remote="github" revision="goodold" />
+  <project name="willl0344/android_device_samsung_hltetmo" path="device/samsung/hltetmo" remote="github" revision="goodold" />
+  <project name="willl0344/device_samsung_qcom-common" path="device/samsung/qcom-common" remote="github" revision="goodold" />
+  <project name="willl0344/device_samsung_msm8960-common" path="device/samsung/msm8960-common" remote="github" revision="goodold" />
+  <project name="willl0344/hardware_samsung" path="hardware/samsung" remote="github" revision="goodold" />
+  <remove-project name="SlimRoms/packages_apps_Calculator" />
+  <project name="CyanogenMod/android_packages_apps_Calculator" path="packages/apps/Calculator" remote="github" revision="cm-11.0" />
+  <remove-project name="SlimRoms/packages_apps_Browser" />
+  <project name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser" remote="github" revision="cm-11.0" />
+  <remove-project name="SlimRoms/frameworks_base" />
+  <project name="willl0344/frameworks_base" path="frameworks/base" remote="github" revision="w03-caf" />
+  <remove-project name="SlimRoms/packages_apps_Settings" />
+  <project name="willl0344/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="w03" />
+  <project name="willl0344/android_packages_apps_ScreenRecorder/" path="packages/apps/ScreenRecorder" remote="github" revision="kitkat" />
+  <project name="SlimRoms/hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" groups="caf" revision="kk4.4" />
+  <project name="SlimRoms/hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="kk4.4" />
+  <project name="willl0344/android_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="github" revision="android-4.4" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project name="omnirom/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="android-4.4" />
+  <remove-project name="SlimRoms/hardware_qcom_gps" />
+  <project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="cm-11.0" />
+</manifest>

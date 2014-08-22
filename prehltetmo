@@ -1,0 +1,26 @@
+#cd frameworks/av
+#sleep 1
+#git fetch https://github.com/willl0344/frameworks_av.git goodold
+#sleep 1
+####Revert "stagefright: Improve 24-bit support" 
+#git cherry-pick 71357c6dcffe9f674741d31fab631e84f899349d
+#sleep 1
+####Revert "stagefright: Fix offload fallback for 24bit" 
+#git cherry-pick e13b167d8e3bdfe854642c902bbd00e62f01c5c0
+#sleep 1
+####Revert "stagefright: Handle offload fallback for 24-bit tracks"
+#git cherry-pick 747b665c1d076e6aac5a7f7d53ba099a342d9dbb
+#sleep 1
+####Revert "stagefright: 24-bit audio support via offloading" 
+#git cherry-pick 557c6b559ecc519616e0516ff9781db17a9d5a33
+#croot
+#sleep 1
+########################
+cd build
+sleep 1
+git fetch https://github.com/willl0344/android_build.git
+sleep 1
+###NFC Remover for old tree builds
+git cherry-pick 3c5cc4f9e33f8db0f971c3b7f1c52c1efe40bb90
+sleep 1
+croot

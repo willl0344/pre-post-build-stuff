@@ -18,7 +18,7 @@ busybox echo "ro.min.fling_velocity=18000" >> /system/build.prop
 busybox echo "" >> /system/build.prop
 busybox echo "ro.min_pointer_dur=8" >> /system/build.prop
 busybox echo "" >> /system/build.prop
-busybox echo "wifi.supplicant_scan_interval=300" >> /system/build.prop
+busybox echo "wifi.supplicant_scan_interval=30" >> /system/build.prop
 busybox echo "" >> /system/build.prop
 busybox echo "ro.kernel.android.checkjni=0" >> /system/build.prop
 busybox echo "" >> /system/build.prop
