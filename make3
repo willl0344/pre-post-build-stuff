@@ -1,5 +1,5 @@
-make Settings
+brunch hlte
 sleep 5
-make framework-res
+brunch bacon
 sleep 5
-make SystemUI
+brunch hltespr

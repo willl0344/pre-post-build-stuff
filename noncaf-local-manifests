@@ -15,7 +15,11 @@
   <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="kk4.4" />
   <project name="TheLoonyBin/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="kk4.4" />
   <project name="CyanogenMod/android_device_samsung_smdk4412-qcom-common" path="device/samsung/smdk4412-qcom-common" remote="github" revision="cm-11.0" />
-  <project path="packages/apps/OmniSwitch" name="willl0344/android_packages_apps_OmniSwitch" remote="github" revision="android-4.4" />
+  <project name="willl0344/android_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="github" revision="android-4.4" />
   <remove-project name="platform/packages/apps/Launcher3" />
-  <project path="packages/apps/Launcher3" name="omnirom/android_packages_apps_Launcher3" remote="github" revision="android-4.4" />
+  <project name="omnirom/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="android-4.4" />
+  <project name="SlimRoms/device_lge_hammerhead" path="device/lge/hammerhead" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_lge_hammerhead" path="kernel/lge/hammerhead" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/device_lge_mako" path="device/lge/mako" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_lge_mako" path="kernel/lge/mako" remote="github" revision="kk4.4" />
 </manifest>

@@ -114,6 +114,11 @@ croot
 sleep 1
 
 
+###
+git revert  --no-edit
+sleep 1
+
+
 export USE_CCACHE=1
 sleep 1
 ccache -M 100

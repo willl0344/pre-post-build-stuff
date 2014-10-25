@@ -16,7 +16,7 @@
   <remove-project name="SlimRoms/packages_apps_Settings" />
   <project name="willl0344/packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="w03" />
   <project name="willl0344/android_packages_apps_ScreenRecorder/" path="packages/apps/ScreenRecorder" remote="github" revision="kitkat" />
-  <project name="SlimRoms/hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" groups="caf" revision="kk4.4" />
+  <project groups="caf" name="SlimRoms/hardware_qcom_audio-caf" path="hardware/qcom/audio-caf" remote="github" revision="kk4.4" />
   <project name="SlimRoms/hardware_qcom_media-caf" path="hardware/qcom/media-caf" remote="github" revision="kk4.4" />
   <project name="SlimRoms/hardware_qcom_display-caf" path="hardware/qcom/display-caf" remote="github" revision="kk4.4" />
   <project name="willl0344/android_packages_apps_OmniSwitch" path="packages/apps/OmniSwitch" remote="github" revision="android-4.4" />
@@ -24,4 +24,5 @@
   <project name="omnirom/android_packages_apps_Launcher3" path="packages/apps/Launcher3" remote="github" revision="android-4.4" />
   <remove-project name="SlimRoms/hardware_qcom_gps" />
   <project name="CyanogenMod/android_hardware_qcom_gps" path="hardware/qcom/gps" remote="github" revision="cm-11.0" />
+  <project name="SlimRoms/device_samsung_hlte" path="device/samsung/hlte" remote="github" revision="kk4.4" />
 </manifest>

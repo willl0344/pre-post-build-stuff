@@ -1,0 +1,9 @@
+cd frameworks/native
+sleep 1
+git fetch https://github.com/willl0344/frameworks_native.git
+sleep 1
+###Remove ifdef QCOM_BSP setUsage GRALLOC
+git cherry-pick edafb202a4e0df36f7f23fc5093de09273df4318
+sleep 1
+croot
+sleep 1
