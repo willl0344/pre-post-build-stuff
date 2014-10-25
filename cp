@@ -20,8 +20,8 @@ sleep 1
 git cherry-pick 89a7d961ddc95387a5f1a7c6cc6397fa5616a07d
 sleep 1
 ###Set /lib/modules/ recursive 755 permissions
-git cherry-pick 1a81d1860af7cc79c43ccf343b42fc239685b817
-sleep 1
+#git cherry-pick 1a81d1860af7cc79c43ccf343b42fc239685b817
+#sleep 1
 croot
 sleep 1
 
